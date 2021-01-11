@@ -27,6 +27,6 @@ pip install gspread
 
 4) Obtain a link from Linkedin that indicates your target position and location. The following is a sample link "https://www.linkedin.com/jobs/search/?keywords=Software%20Engineer&location=United%20States"
 
-5) Read the comments in .py, and edit any details accordingly
+5) Read the comments in .py script, and edit any details accordingly
 
 ![demo](https://user-images.githubusercontent.com/76123658/104187049-449b1e00-5452-11eb-9bb4-b28860daeee8.gif)
