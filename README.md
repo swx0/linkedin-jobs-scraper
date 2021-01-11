@@ -12,7 +12,7 @@
 
 - **Job description**
 
-Afterwhich, the data obtained would be written and saved in Google sheets using Google Sheets API 
+Afterwhich, the data obtained would be written and saved in Google sheets using [Google Sheets API](https://developers.google.com/sheets/api) 
 ## Setup
 To start scraping job information from Linkedin: 
 1) Obtain a link from Linkedin that indicates your target position and location. The following is a sample link "https://www.linkedin.com/jobs/search/?keywords=Software%20Engineer&location=United%20States"
