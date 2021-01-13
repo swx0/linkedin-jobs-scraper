@@ -1,4 +1,4 @@
-# Linkedin Jobs Scraper
+# Linkedin Jobs Scraper :mag:
 
 ## About
 *Linkedin Jobs Scraper* extracts the following data from Linkedin search results:
