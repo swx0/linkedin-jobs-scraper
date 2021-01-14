@@ -33,4 +33,5 @@ pip install gspread
 5) Read the comments in .py script, and edit:
     - String associated to the name of your Google Sheets
     - Link from step 4)
-
+    
+6) Run .py script
