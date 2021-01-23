@@ -49,37 +49,41 @@ while True:
         soup = BeautifulSoup(html_doc, 'html.parser')
         # print(soup.prettify())
         
-        # data-id of selected job (active job card)
+        # Find data-id of selected job (active job card)
         IDhtml = soup.find_all('li', class_='result-card job-result-card result-card--with-hover-state job-card__contents--active')
         IDsoup = BeautifulSoup(str(IDhtml[0]), 'html.parser')
         print(data_id(IDsoup))
         print()
         
+        # Update data-id on Google Sheets
         dataID = data_id(IDsoup)[0]
         sheet.update_cell(current_row,1,dataID) # data-id in 1st column  
         
-        # Update Company name, Location and Position on Google Sheets
+        # Find Company Name
         company = soup.find_all('span', class_='topcard__flavor')
         company = company[0].find_all('a', class_='topcard__org-name-link topcard__flavor--black-link')
         print(company[0].text)
         print()
         
+        # Update Company Name on Google Sheets
         company_string = company[0].text
         sheet.update_cell(current_row,2,company_string) # Company name in 2nd column
 
-
+        # Find Position
         position = soup.find_all('h2', class_='topcard__title')
         print(position[0].text)
         print()
-
+        
+        # # Update Position on Google Sheets
         position_string = position[0].text
         sheet.update_cell(current_row,3,position_string) # Position in 3rd column 
         
-           
+        # Find Location   
         location = soup.find_all('span', class_='topcard__flavor topcard__flavor--bullet')
         print(location[0].text)
         print()
-
+        
+        # Update Location on Google Sheets
         location_string = location[0].text
         sheet.update_cell(current_row,4,location_string) # Location in 4th column  
         
