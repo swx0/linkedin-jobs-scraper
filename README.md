@@ -31,7 +31,10 @@ pip install gspread
 4) Obtain a link from Linkedin that indicates your target position and location. The following is a sample link "https://www.linkedin.com/jobs/search/?keywords=Software%20Engineer&location=United%20States"
 
 5) Read the comments in .py script, and edit:
-    - String associated to the name of your Google Sheets
+    - string as the title name of your Google Sheets
+    ```
+    sheet = client.open('rename sheets title here').sheet1
+    ```
     - Link from step 4)
     
 6) Run .py script
