@@ -35,6 +35,9 @@ pip install gspread
     ```
     sheet = client.open('rename sheets title here').sheet1
     ```
-    - Link from step 4)
     
+    - Link from step 4)
+    ```
+    driver.get('https://www.linkedin.com/jobs/search/?keywords=Software%20Engineer&location=United%20States')
+    ```
 6) Run .py script
