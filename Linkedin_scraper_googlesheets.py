@@ -14,7 +14,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name(file_name,scope)
 client = gspread.authorize(creds)
 
 # Open the designated sheet
-sheet = client.open('job description').sheet1 # rename the string according to the name of your google sheets
+sheet = client.open('rename sheets title here').sheet1 # rename the string according to the title name of your google sheets
 
 current_row = 2
 
